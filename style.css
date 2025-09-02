@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: #202327;
+}
+
+
+/* CABEÇALHO */
+header {
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #6633FF 6.82%, #8541EB 36.19%, #AF55D0 63.07%, #FF7A9D 95.42%);
+    padding: 18px 0px 17px 46px;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin-right: 85px;
+
+}
+
+.Menu-um {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.Menu-um li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* FIM CABEÇALHO */
+
+
+/* COMEÇO DA APRESENTAÇAO */
+.Home {
+    height: 80vh;
+    background: linear-gradient(90deg, #6633FF 6.82%, #8541EB 36.19%, #AF55D0 63.07%, #FF7A9D 95.42%);
+}
+
+.Home-spacing {
+    padding: 50px;
+}
+
+.Grid-um-apresentação {
+    display: grid;
+    grid-template-areas:
+        "Grid-dois-apresetação Grid-perfil-tay"
+        "Grid-dois-apresetação Grid-perfil-tay"
+        "Grid-dois-apresetação Grid-perfil-tay";
+    flex-direction: column;
+    text-align: start;
+    padding-left: 46px;
+    gap: 38px;
+}
+
+.Grid-dois-apresetação {
+    display: grid;
+    grid-template-areas:
+        "Apresetação"
+        "List-pilares"
+        "Button-orçamento";
+}
+
+.Apresetação {
+    grid-area: Apresetação;
+    color: #fff;
+}
+
+.H1-apresetação {
+    font-size: 52px;
+    font-weight: 700px;
+}
+
+.P1-apresetação {
+    flex-direction: column;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* FIM DA APRESENTAÇAO */
+
+
+/* COMEÇO LIST APRESENTAÇÃO */
+.List-pilares {
+    padding: 18px;
+    grid-area: List-pilares;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: #fff;
+
+}
+
+.Pilares {
+    padding-top: 15px;
+    list-style: outside;
+}
+
+.Pilares::marker {
+    color: #FF7A9D;
+    font-size: 20px;
+}
+
+/* FIM LIST APRESENTAÇÃO */
+
+
+.Button-orçamento {
+    grid-area: Button-orçamento;
+    background-color: #fff;
+    border-radius: 50px;
+    border: #6633FF;
+    box-shadow: none;
+    height: 60px;
+    width: 280px;
+    margin-top: 44px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Button-link {
+    color: #6633FF;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.Grid-perfil-tay {
+    grid-area: Grid-perfil-tay;
+    margin-right: 140px;
+    width: 334px;
+    height: 339px;
+}
+
+.Perfil-tay {
+    padding-top: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen  and (max-width: 1350px) {
+    .Home {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+ /* COMEÇO DA APRESENTAÇAO */
+.Home {
+    height: 100vh;    
+}
+
+.Home-spacing {
+    padding: 30px;
+}
+.Grid-um-apresentação { 
+    gap: 10px;
+    margin: 35px 35px 35px 0px;    
+}
+
+.Grid-dois-apresetação {
+    display: grid;
+    grid-template-areas:
+        "Apresetação"
+        "List-pilares"
+        "Button-orçamento";   
+        margin: 10px;     
+}
+.H1-apresetação {
+    font-size: 36px;
+    font-weight: 700px;
+}
+.P1-apresetação {
+    font-size: 16px;
+    font-weight: 200;
+    line-height:25px;
+}
+/* FIM DA APRESENTAÇAO */
+
+
+/* COMEÇO LIST APRESENTAÇÃO */
+.List-pilares {
+    padding: 10px;
+    grid-area: List-pilares;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    color: #fff;
+
+}
+
+.Pilares {
+    padding-top: 10px;
+    list-style: outside;
+}
+
+.Pilares::marker {
+    color: #FF7A9D;
+    font-size: 10px;
+}
+
+/* FIM LIST APRESENTAÇÃO */
+
+
+.Button-orçamento {
+    grid-area: Button-orçamento;
+    background-color: #fff;
+    border-radius: 50px;
+    border: #6633FF;
+   
+    height: 60px;
+    width: 240px;
+    
+}
+
+.Button-link {
+    color: #6633FF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Grid-perfil-tay {
+    grid-area: Grid-perfil-tay;
+    margin-bottom: 150px;
+    display: none;
+}
+}
